@@ -113,11 +113,27 @@ body{
     align-items: center;
     max-width: 33%;
     min-width: 33px;
-    background-color: var(--graycolor);
+    background-image: linear-gradient(to bottom right, #adadad 0%, #b1b1b1 24%, #444444 49%, #d4d4d4 75%, #8a8a8a  100%);
+    background-size: 200% 200%;
+    animation: fmovimiento 5s linear infinite alternate;
     border-radius: 19px;
     margin: 5px 6px 0px 0px;
     font-size: 18px;
 }
+
+@keyframes fmovimiento{
+    from{
+        background-position: 0 0;
+    
+    }
+    to{
+    background-position: 100% 100%;
+    }
+  }
+
+
+
+
 
 .button-user:hover{
     color: var(--orangecolor) !important;
@@ -131,7 +147,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--graydark);
+    color: var(--black);
     border: 3px solid var(--orangecolor);
     background-color: var(---whitecolor);
     cursor: hand;
@@ -145,6 +161,7 @@ body{
 }
 
 .button-user p {
+    color: var(--bluedark);
     font-family: 'Poppins', sans-serif;
     font-weight: 100;
     margin: 0px 15px 0px 0px;

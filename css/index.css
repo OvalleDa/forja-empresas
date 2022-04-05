@@ -194,12 +194,15 @@ header{
     margin: 10px;
 }
 .signos li i{
-    color: var(--winecolor);
+    color: var(---whitecolor);
     font-size: 20px;
 }
 
 .bg-covid{
-    background-image: url(../img/4.\ covid.svg);
+    background-image: url(../img/4.\ covid.jpeg);
+    color: var(--black);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-wrap: wrap;
     padding: 0 60px;
@@ -227,6 +230,10 @@ header{
 .oms img{
     width: 120px;
     margin-left: 100px;
+}
+
+.oms a{
+    color: var(---whitecolor);
 }
 
 
@@ -280,11 +287,17 @@ footer{
 }
 @media (max-width: 768px) {
     .con-banner{
-        background-color: rgba(0, 0, 0, .3);
+        background-color: rgba(255, 123, 0, 0.3);
         margin: 30px auto ;
         border-radius: 16px;
-        
     }
+
+    .con-banner h2{
+        color: var(--bluedark);
+        font-size: 40px;
+        margin: 0;
+    }
+
     .cont-info div{
         margin-top: 20px;
     }
