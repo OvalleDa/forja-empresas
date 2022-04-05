@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+:root{
+    --red-color:#A40101;
+    --blue-color:#2CA3AB;
+    --gray-color:#C4C4C4;
+    --orange-color:#F3610E;
+    --dark-blue-color:#1D1B45;
+    --white-color:#FFFFFF;
+    --black-color:#191919;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px 0 80px;
+}
+
+.info-contact{
+    display: flex;
+    max-width: 300px;
+    align-items: flex-start;
+    margin-right: 10px;
+}
+
+.info-contact i{
+    color:var(--white-color);
+    margin-right: 30px;
+    background-color: var(--orange-color);
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 2px 3px var(--black-color);
+}
+
+.info-p p{
+    margin:0 0 4px;
+}
+
+.bton-login{
+    background-color: var(--dark-blue-color);
+    color: var(--white-color);
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bton-login i{
+    margin-left: 5px;
+}
+
+.bton-login:hover, .bton-ingresar:hover{
+    background-color: #2f2c6d;
+    transform: translateY(-0.5px);
+    box-shadow: 0px 2px 3px var(--black-color);
+    cursor: pointer;
+}
+
+.h-pte1{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+.inf-pte1{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin-right: 20%;
+}
+
+.imgenes{
+    display: flex;
+    width: 27%;
+    justify-content: space-between;
+}
+
+.h-pte2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h-pte2 i{
+    font-size: 50px;
+    color: var(--orange-color);  
+}
+
+.syrin{  
+    margin-top: 0;
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+}
+
+.bg-banner{
+    background-image: url(../img/2.\ medico.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 540px;
+}
+
+.conten-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 60%;
+    text-align: center;
+}
+
+.conten-banner h2{
+    color: var(--orange-color);
+    font-size: 40px;
+    margin: 0;
+}
+
+.conten-banner h1{
+    font-size: 60px;
+    margin: 0;
+}
+
+.franja img{
+    width: 100%;
+}
+
+.fa-ul li{
+    margin: 10px;
+}
+.fa-ul li i{
+    color: var(--red-color);
+    font-size: 20px;
+}
+
+.bg-cov{
+    background-image: url(../img/4.\ covid.svg);
+    display: flex;
+    padding: 0 60px;
+    justify-content: space-around;
+}
+
+.title-cov{
+    display: flex;
+    align-items: center;
+}
+
+.signos img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.que-hacer img{
+    width: 35px;
+    margin-right: 5px;
+}
+
+.oms img{
+    width: 120px;
+    margin-left: 100px;
+}
+
+.oms a{
+    margin-left: 30px;
+}
+.signos{
+    width: 500px;
+    margin: 20px;
+    padding: 20px;
+    text-align: justify;
+    font-size: 120%;
+}
+
+.que-hacer{
+    width: 500px;
+    margin: 20px;
+    padding: 20px;
+    text-align: justify;
+    font-size: 120%;
+}
+
+.sec-covicho{
+    background-color: #191919bd;
+}
+
+.sec-covicho p{
+    background-color: var(--dark-blue-color);
+    color: white;
+    padding: 10px 5px;
+    margin:0 0 10px;
+}
+
+.sec-covicho p:hover{
+    background-color: #2f2c6d;
+}
+
+footer{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 3px 0 40px;
+    text-align:center;
+    font-size: 11px;
+}
+

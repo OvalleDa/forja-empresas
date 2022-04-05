@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+:root{   
+    --white-color: #ffffff; 
+    --red-color: #a40101;
+    --blue-color: #2ca3ab;
+    --blue2-color: #2ca3ab9b;
+    --grey-color: #c4c4c4;
+    --orange-color: #ca5714;
+    --orangelight-color: #e47c40;
+    --darkblue-color: #1d1b45;
+    --darkbluelight-color: #1d1b45d8;
+    --lightblue-color: #a8dde0;
+    --dark-color: #191919;
+}
+
+/*Estilos Table Pacientes*/
+
+body{
+    font-family: 'Poppins', sans-serif;
+  }
+
+.encabezado{
+    background-color: var(--dark-color);
+    display: flex;
+    padding: 30px  5px;
+    justify-content: space-between;
+}
+  
+.encabezado img{
+    margin: auto;
+}
+  
+#btnform{
+    display: flex;  
+}
+  
+  
+.btnformuno{
+    width:60px;
+    height:60px;
+    margin: 5px;
+    border-radius: 50%;
+    font-size:30px;
+    border: 2px solid var(--blue-color);
+    color: var(--dark-color);
+}
+
+.btnformuno:hover{
+    color: rgb(204, 204, 204) !important;
+    box-shadow: 0 4px 6px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease; 
+
+}
+  
+.fotohead img{
+    width: 100%;
+    border-bottom: 6px solid var(--blue-color);
+}
+  
+
+.frm-search {
+    display: flex;
+    margin-top: 20px;
+    margin-right: 50px;
+    justify-content: right;
+    }
+
+.frm-search input[type="text"] {
+    display: flex;
+    padding: 10px;
+    border: 3px solid var(--blue-color);
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 2px;
+}
+
+.frm-search input:hover{
+    color: rgb(204, 204, 204) !important;
+    box-shadow: 0 4px 6px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+}
+
+.frm-search button {
+    background-color: var(--darkblue-color);
+    color: var(--blueinputs-color);
+    border-radius: 10px;
+    border: 3px solid var(--blue-color);
+    cursor: pointer;
+}
+
+.frm-search button:hover {
+    color: rgb(204, 204, 204) !important;
+    box-shadow: 0 4px 6px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+}
+
+.pacientes {
+    margin: 30px;
+}
+
+.tabla-pacientes h1 {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    margin-bottom: 80px;
+}
+
+.tabla-pacientes a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+
+}
+
+.b-naranja {
+    background-color: var(--orange-color);
+    border-radius: 10px;
+    border-color: var(--blue-color);
+    font-weight: bold;
+    cursor: pointer;
+    margin: 50px;
+    color:var(--white-color);
+    text-decoration: none;
+    
+    }
+
+.b-naranja:hover {
+    color: rgb(204, 204, 204) !important;
+    box-shadow: 0 4px 6px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+    }
+
+table {
+    width: 100%;
+    border: 3px solid var(--blue-color);
+    border-collapse: collapse; 
+}
+
+table th {
+    border: 3px solid var(--blue-color);
+    background-color: var(--darkblue-color);
+    color: var(--white-color);
+    padding: 7px 0;
+}
+
+table td {
+    padding: 10px;
+    border: 2px solid var(--blue-color);
+    background-color: var(--gray-color);
+    text-align: center;
+    
+}
+
+
+.b-azul{
+    background-color: var(--blue-color);
+    border-radius: 3px;
+    border-color: var(--blue-color);
+    font-weight: bold;
+    cursor: pointer;
+    color:var(--black-color);
+    text-decoration: none;
+    height: 35px;
+}
+.b-azul:hover{
+    color: rgb(204, 204, 204) !important;
+    box-shadow: 0 4px 6px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+}
+
+
+.icon1{
+    color:var(--black-color);
+    padding-left: 5px;
+
+}
+.b-rojo{
+    background-color: var(--red-color);
+    border-radius: 3px;
+    border-color: var(--red-color);
+    font-weight: bold;
+    cursor: pointer;
+    color:var(--white-color);
+    text-decoration: none;
+    height: 35px;
+}
+
+.b-rojo:hover{
+    color: rgb(204, 204, 204) !important;
+    box-shadow: 0 4px 6px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+}
+
+.icon2{
+    color:var(--white-color);
+    padding-left: 5px;
+
+}
+#footer{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    align-items:flex-start;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 100;
+}
+.table-small{
+    display: none;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .table-small{
+        display:initial;
+    }
+    .table-large{
+        display: none;
+    }
+}

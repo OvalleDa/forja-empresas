@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+:root{
+    ---whitecolor: #fff;
+    --winecolor: #a40101;
+    --graycolor: #c4c4c4;
+    --bluecolor:#2ca3ab;
+    --bluedark: #1d1b45;
+    --bluesky: #A8DDE0;
+    --orangecolor: #f3610e;
+    --black: #000;
+    --graydark: #4444;
+    --darkcolor: #191919;
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+header{
+  grid-column: 1/3;
+  background-color: var(--darkcolor);
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+
+}
+
+header img{
+  margin-top: 20px;
+  max-width: 70%;
+}
+
+.buttons-header{
+  grid-column: 3/3;
+  margin: 20px;
+}
+
+.btnformuno{
+  width:60px;
+  height:60px;
+  margin: 5px;
+  border-radius: 50%;
+  font-size:30px;
+  border: 2px solid var(--bluecolor);
+  color: var(--darkcolor);
+  cursor: pointer;
+}
+
+.banner-img{
+  grid-column: 1/3;
+  background-color: #2ca3ab;
+}
+
+.banner-img img{
+  width: 100%;
+}
+
+.title{
+  margin-top: 20px;
+  grid-column: 1/3;
+  background-color: #1d1b45;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+}
+
+.container2{
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  border: 2px solid var(--graycolor);
+  grid-column: 1/3;
+  margin-top: 20px;
+  background-color: var(---whitecolor);
+}
+
+.form{
+  grid-column: 1/3;
+  width: 90%;
+  gap: 10px;
+  border-radius: 20px;
+  margin: 1.6em auto;
+  border: 2px solid black;
+  background-color: var(--graycolor);
+}
+
+.input{
+  margin: 20px;
+  width: 200px;
+  height: 30px;
+  border: 1px solid #2ca3abd5;
+  padding: 0 10px;
+  color: gray;
+}
+
+.datospaciente{
+  display: grid;
+  grid-template-columns: repeat(2,fr);
+  grid-column: 1/3;
+  margin: 10px;
+  background-color: var(--bluecolor);
+  border: 1px solid black;
+  color: var(---whitecolor);
+}
+
+.datospaciente h3{
+  grid-column: 2/3;
+}
+
+.datospaciente img{
+  grid-column: 1;
+  width: 30px;
+  margin-top: 10px;
+}
+
+.datos {  
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin: 10px;
+}
+
+.datos input{
+  margin: 20px;
+  height: 30px;
+}
+
+.datos select{
+  height: 30px;  
+  margin: 20px;
+}
+
+.datosp {  
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin: 10px;
+}
+
+.datosp input{
+  margin: 20px;
+  height: 30px;
+}
+
+.datosp select{
+  height: 30px;
+  margin: 20px;
+}
+
+.pr{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin: 10px;
+}
+
+.pr input{
+  margin: 20px;
+  height: 30px;
+}
+
+.pr select{
+  height: 30px;
+  margin: 20px;
+}
+
+
+.radio label{
+  margin: 20px;
+}
+
+.radio .opradio{
+  text-align: center;
+  margin: 20px;
+}
+
+.buttonenviar{
+
+  margin-top: 10px;
+  width: 30%;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--orangecolor);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.buttonenviar:hover{
+
+      background-color:var(---orange-color) ;
+  
+  
+  }
+
+@media (max-width: 768px ) {
+  .datos,.datosp{
+    grid-template-columns: 1fr ;
+  }
+  .pr{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media (max-width: 375px ) {
+  
+  .pr{
+    grid-template-columns:  1fr;
+  }
+}

@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+:root{
+    ---whitecolor: #fff;
+    --winecolor: #a40101;
+    --graycolor: #c4c4c4;
+    --bluecolor:#2ca3ab;
+    --bluedark: #1d1b45;
+    --bluesky: #A8DDE0;
+    --orangecolor: #f3610e;
+    --black: #000;
+    --graydark: #4444;
+
+}
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px 0 80px;
+}
+
+
+
+.contacto{
+    display: flex;
+    max-width: 300px;
+    align-items: flex-start;
+    margin-right: 10px;
+}
+
+.contacto i{
+    color:var(---whitecolor);
+    margin-right: 30px;
+    background-color: var(--orangecolor);
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 2px 3px var(--black);
+    cursor: pointer;
+}
+
+.info p{
+    margin:0 0 4px;
+    cursor: pointer;
+}
+
+.b-login{
+    background-color: var(--bluedark);
+    color: var(---whitecolor);
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.b-login i{
+    margin-left: 5px;
+}
+
+.b-login:hover, .bton-ingresar:hover{
+    background-color: #2f2c6d;
+    transform: translateY(-0.5px);
+    box-shadow: 0px 2px 3px var(--black);
+    cursor: pointer;
+}
+
+.cont-1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-top: 15px;
+}
+
+.cont-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 500px;
+    margin-right: 20%;
+}
+
+.img{
+    display: flex;
+    width: 27%;
+    justify-content: space-between;
+    z-index: 2;
+}
+.img a img , .img a i{
+    width: 100%;
+}
+
+.cont-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cont-2 i{
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    color: var(--orangecolor);  
+}
+.cont-2 a{
+    width: 100%;
+}
+
+.logo-forja{
+    animation-name: color;
+    animation-duration: 3s ;
+    animation-iteration-count: infinite;
+
+}
+
+
+@keyframes color{
+    0%{
+        transform: scale(1);
+    }
+    
+    20%{
+        transform: scale(1.3);
+    }
+    40%{
+        transform: scale(1.6);
+    }
+    60%{
+        transform: scale(1.9);
+    }
+    70%{
+        transform: scale(1);
+    }
+
+}
+
+
+
+#banner{
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+}
+
+.c-banner{
+    background-image: url(../img/2.\ medico.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 540px;
+}
+
+.con-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 60%;
+    text-align: center;
+}
+
+.con-banner h2{
+    color: var(--orangecolor);
+    font-size: 40px;
+    margin: 0;
+}
+
+.con-banner h1{
+    font-size: 60px;
+    margin: 0;
+}
+
+.franja{
+    width: 60%;
+    height: 40px;
+    background-color: red;
+    background-image: url(../img/linea.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+
+.signos li{
+    margin: 10px;
+}
+.signos li i{
+    color: var(--winecolor);
+    font-size: 20px;
+}
+
+.bg-covid{
+    background-image: url(../img/4.\ covid.svg);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 60px;
+    justify-content: space-around;
+}
+
+.title-q{
+    display: flex;
+    align-items: center;
+}
+
+.signos img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.info-q img{
+    width: 35px;
+    margin-right: 5px;
+}
+.info-q p{
+    text-align: justify;
+}
+
+.oms img{
+    width: 120px;
+    margin-left: 100px;
+}
+
+
+.signos{
+    width: 500px;
+    margin: 20px;
+    padding: 20px;
+    text-align: justify;
+    font-size: 120%;
+}
+
+.info-q{
+    width: 500px;
+    margin: 20px;
+    padding: 20px;
+    
+    font-size: 120%;
+}
+
+.covid-info{
+    background-color: #191919bd;
+}
+
+.covid-info p{
+    background-color: var(--dark-blue-color);
+    color: var(---whitecolor);
+    padding: 10px 5px;
+    margin:0 0 10px;
+    cursor: pointer;
+}
+
+
+
+footer{
+    background-color: var(--black);
+    color: var(---whitecolor);
+    padding: 3px 0 40px;
+    text-align:center;
+    font-size: 11px;
+}
+
+@media (max-width: 1024px) {
+    .franja{
+        width: 40%;
+    }
+    .c-banner{
+        background-position: right;
+    }
+
+    
+}
+@media (max-width: 768px) {
+    .con-banner{
+        background-color: rgba(0, 0, 0, .3);
+        margin: 30px auto ;
+        border-radius: 16px;
+        
+    }
+    .cont-info div{
+        margin-top: 20px;
+    }
+    .c-banner{
+        background-position: right;
+    }
+    .img a img {
+        width: 150%;
+    }
+    
+    .cont-2 i{
+        font-size: 20px;
+        
+    }
+    
+}
