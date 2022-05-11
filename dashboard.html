@@ -7,19 +7,20 @@
     <title>Dashboard</title>
     <link rel="shotcut icon" href="img/forja 1.svg">
     <link rel="stylesheet" href="css/dashboard.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://kit.fontawesome.com/4c9db78ec9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div id="sidebar">
         <div class="logo-side">
-            <a href="index.html"><img src="img/0. logoforja.png" alt="logo de forja"></a>
+            <a href="dashboard.html"><img src="img/0. logoforja.png" alt="logo de forja"></a>
         </div>
 
         <div class="buttons-side">
             <div class="buttons-s">
                 <a href="pacientes.html"><i class="fa-solid fa-users"></i><span>Pacientes</span></a>
-                <a href=""><i class="fa-solid fa-syringe"></i><span>Vacunación</span></a>
+                <a href="vacunacion.html"><i class="fa-solid fa-syringe"></i><span>Vacunación</span></a>
                 <a href="index.html"><i class="fa-solid fa-power-off"></i><span>Cerrar sesión</span></a>
             </div>
         </div>
@@ -41,24 +42,25 @@
             <section class="digite">
                 <div class="searcher">
                     <label for="Documento"></label>
-                    <input type="number" name="Documento" id="Documento" placeholder="ㅤDigite el numero de Documento" class="digite-input">
+                    <input type="number" name="documento" id="documento" placeholder="Digite el numero de Documento" class="digite-input">
                 </div>
-
-
                 <div class="buttons-input">
-                    <a href="" class=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="" class="" id="searchicon"><i class="fa-solid fa-magnifying-glass"  onsubmit="user()"></i></a>
                     <a href=""><i class="fa-solid fa-rotate-right"></i></a>
-                    
                 </div>
             </section>
-        </div>
+
+        </div>  
         
+
+        </div>
+
         <div class="footer">
         <img src="img/12. franja.svg" alt="" >
         </div>
 
     </div>
-
+    <script src="js/dash.js"></script>
 </body>
 
 </html>

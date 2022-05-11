@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Registropaciente" author="Daniela Ovalle" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" type="text/css" href="css/nuevopacientes.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <script src="https://kit.fontawesome.com/4c9db78ec9.js" crossorigin="anonymous"></script>
+</head>
+<body>        
+    <div class="container">
+        <header>
+            <a href="dashboard.html"><img src="img/0. logoforja.png"></a>
+            <article class="buttons-header">
+                <a href="dashboard.html"><button class="btnformuno"><i class="fa-solid fa-house-user"></i></button></a>
+                <a href="login.html"><button class="btnformuno"><i class="fa-solid fa-power-off"></i></button></a>
+            </article>
+        </header>
+        <article class="banner-img">
+            <img src="img/12. franja.svg">    
+        </article>
+        <article class="title">
+            <h2 id="usuario-nuevo">REGISTRO VACUNACIÓN</h2>
+        </article>
+        <div class="container2">
+            
+            <article class="form">  
+                <div class="buttons-head">
+                    <h4>Estado:ACTIVO</h4>
+
+                    <div class="div-buttons">
+                        <a href="pacientes.html"><button class="bton-ingresar">Guardar cambios</button></a>
+                        <a href="dashboard.html" class="bton-ingresar">Cerrar</a>
+                    </div>
+                </div>
+                    <input class="input" type="date" name="fecha" id="fecha" required>
+                    <input class=" input" type="number" name="numeroregistro" id="nregisto" placeholder="N regitro" required> 
+           <article class="datospaciente">
+               <img src="img/16. man-user.svg">
+                <h3>DATOS PERSONALES</h3>
+            </article>
+            <div class="datos">
+                <input type="text" class="datos1" name="name" id="name" placeholder="Nombres" required>
+                <input type="text" class="datos2" name="lastname" id="lastname" placeholder="Apellidos" required>
+                <input type="text"  class="datos3"name="nidentificacion" id="nid" placeholder="Número de identificación" required>
+        
+            <input type="date" name="fechan" id="fechan" required>
+            <input type="number" name="edad" id="edad" placeholder="Edad" required>
+            <select name="eps" id="eps">
+                <option value="0" selected>Eps</option>
+                <option value="1">Salud Total</option>
+                <option value="2">Sanitas</option>
+                <option value="3">Nueva Eps</option>
+                <option value="4">Compensar</option>
+            </select>
+            </div>
+            <article class="datospaciente">
+                <img src="img/17. geo.svg">
+                 <h3>INFORMACIÓN DE VACUNACIÓN</h3>
+             </article>
+             <div class="datosp">
+                <select name="dep" id="dep">
+                    <option value="0" selected>Sede</option>
+                    <option value="1">Restrepo</option>
+                    <option value="2">Kennedy</option>
+                    <option value="3">Engativá</option>
+                    <option value="4">Fontibón</option>
+                </select>
+                <select name="mun" id="mun">
+                    <option value="0" selected>Nombre del profesional</option>
+                    <option value="1">Pepita Peréz</option>
+                    <option value="2">Julia Beltran</option>
+                    <option value="3">Mario Engativá</option>
+                    <option value="4">Guillermo Pinzón</option>
+                </select>
+                <input type="number" name="idprof" id="idprof" placeholder="ID profesioanl" required>
+                <input type="number" name="dosis" id="dosis" placeholder="Dosis" required>
+                <select name="bio" id="bio">
+                    <option value="0" selected>Biologico</option>
+                    <option value="1">Pfizer</option>
+                    <option value="2">Sinovac</option>
+                    <option value="3">Moderna</option>
+                    <option value="4">AstraZeneca</option>
+                </select>
+                <input class="input" type="text" name="fecha2" id="fecha2" placeholder="Fecha primera dosis" required>
+                <input class="input" type="text" name="fecha3" id="fecha3" placeholder="Fecha sugunda dosis" required>               
+                <input class="input" type="text" name="observaciones" id="observaciones" placeholder="Observaciones adicionales" required>               
+
+            </div>
+
+            </article>
+        </div>
+        </div>
+        <footer >
+            <section id="footer">
+            <p>©2021 FORJAEMPRESAS<p>
+            </section>
+        </footer>       
+    
+</body>
+</html>

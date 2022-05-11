@@ -160,7 +160,7 @@ header img{
 
 .datosp {  
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(3,1fr);
   margin: 10px;
 }
 
@@ -226,7 +226,304 @@ header img{
   font-weight: 100;
 }
 
+#register-user{
+  border: 3px solid var(--gray-color);
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+#register-user i{
+  font-size: 20px;
+}
+
+.form-register{
+  background-color: var(--gray-color);
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: 2px solid black;
+}
+
+.form-register input, .form-register select{
+  border: 2px solid var(--blue-color);
+  height: 35px;
+  margin: 10px 10px 10px 0px;
+}
+
+.registerPacient{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.date-register{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0 1.5% 0 1.5%;
+}
+
+.date-register .group-data input{
+  display: flex;
+  margin-right: 35px;
+  width: 250px;
+}
+
+.title-user-new{
+  background-color: var(--blue-color);
+  border-radius: 5px;
+  border: 1px solid var(--black-color);
+}
+
+.title-user-new i{
+  margin-left: 10px;
+}
+
+.title-user-new h3{
+  color: var(--white-color);
+  text-align: center;
+  font-weight: normal;
+  margin: 7px;
+}
+
+.title-user-new div{
+  display: flex;
+  padding: 0;
+  align-items: center;
+}
+
+.user-data{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.user-data div{
+  min-width: 300px;
+  width: 100%;
+}
+
+.user-data input, .form-control {
+  display: flex;
+  width:100%;
+}
+
+.user-data select{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.form-control{
+  margin: 0px 10px;
+}
+
+.inputs3{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.inputs3 div{
+  width: 100%;
+}
+
+.inputs3 select{
+  width: 30%;
+}
+
+.inputs3 input, .inputs3 select{
+  width: 100%;
+  padding-left: 10px;
+}
+
+input::placeholder{
+  padding-left: 10px;
+}
+
+select{
+  padding-left: 6px;
+}
+
+.buttons-head{
+  grid-template-columns: 40% 60%;
+  align-items: center;
+  margin-top: -15px;
+}
+.div-buttons{
+  justify-content: flex-end;
+}
+
+.buttons-head .bton-ingresar{
+  width: 160px;
+  font-size: 16px;
+}
+
+#header-register{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--blue-color);
+  padding: 0;
+}
+
+#header-register .logo{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: var(--black-color);
+}
+
+#header-register .logo img{
+  width: 200px;
+}
+
+#header-register .franja{
+  margin: 0;
+  width: 100%;
+}
+
+#header-register .btons .off i{
+  animation:girar 2s 2s infinite;
+}
+
+.bton-ingresar{
+  background-color: var(--orangecolor);
+  color: var(---whitecolor);
+  border-radius: 5px;
+  border: 1px solid #2f2c6d;
+  margin: 20px 10px 20px;
+  padding: 5px;
+  width: 120px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btons i{
+  background-color: var(--gray-color);
+  padding: 5px;
+  border-radius: 50%;
+  border: 3px solid var(--blue-color);
+  margin-left: 6px;
+  font-size: 20px;
+  color: var(--black-color);
+}
+
+/*FORMULARIO REGISTRO VACUNACIÓN--------*/
+#vacunation fieldset{
+  border: none;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.h2-user-new{
+  padding-left: 15px;
+  width: 100%;
+  background-color: var(--dark-blue-color);
+  color: var(--white-color);
+  border-radius: 5px;
+}
+
+.buttons-head{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: -15px;
+}
+
+.buttons-head .bton-ingresar{
+  width: 140px;
+  font-size: 14px;
+}
+
+.buttons-head a{
+  text-align: center;
+  text-decoration: none;
+}
+
+.buttons-head h4{
+  padding: 10px;
+}
+
+.div-buttons{
+  display: flex;
+  justify-content: center;
+}
+
+.observation{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.observation textarea{
+  border: 2px solid var(--blue-color);
+  width: 60%;
+  text-align: center;
+  padding-top: 20px;
+}
+
+textarea:focus{
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  /*Pacientes*/
+  .patients-btons{
+      justify-content: space-between;
+      width: 76%;
+  }
+  
+  #register-user{
+      padding: 15px;
+  }
+
+  .form-register{
+      border-radius: 10px;
+  }
+
+  .inputs3{
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      width: 100%;
+      padding: 0 20px 0;
+  }
+
+  .inputs3 input, .inputs3 select{
+      width: 99%;
+  }
+
+  .radio-form div{
+      justify-content: center;
+  }
+
+  .user-data div{
+      min-width: 300px;
+      width: 47%;
+  }
+  
+  .buttons-head{
+      grid-template-columns: 40% 60%;
+      align-items: center;
+      margin-top: -15px;
+  }
+  .div-buttons{
+      justify-content: flex-end;
+  }
+
+  .buttons-head .bton-ingresar{
+      width: 160px;
+      font-size: 16px;
+  }
+
+}
 
 
 .buttonenviar:hover{

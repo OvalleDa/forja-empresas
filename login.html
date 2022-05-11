@@ -21,20 +21,23 @@
                 <h5 class="texto">Contigo, siempre!</h5>
             </div>
             <!--Formulario-->
+
             <div class="login-form">
-                <form action="">
-                    <label for="Usuario">Usuario</label>
-                    <input id="Usuario" type="text">
-                    <label for="Contraseña">Contraseña</label>
-                    <input id="Usuario" type="password">
+                <form action="" method="post" name="form" action="">
+                    <label for="usuario">Usuario</label>
+                    <input id="user" type="text" required name="user">                    
+                    <label for="contraseña">Contraseña</label>
+                    <input id="password" type="password" required name="password">
+                    <button id="button-enviar" type="submit" name="form" onsubmit="valida()">Ingresar</button>
                 </form>
             <div class="login-enviar">
+                <div id="incorrect-user"></div>
                 <a class="login-enviar__anchor" href= "#">¿Olvidaste tu contraseña?</a>
-                <a href="dashboard.html"><button class="login-enviar__boton" type="submit">Ingresar</button></a>
             </div>    
 
             </div>
         </div>
     </main>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

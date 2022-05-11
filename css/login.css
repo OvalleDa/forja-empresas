@@ -127,9 +127,9 @@ input{
     font-size: small;
 }
 
-.login-enviar__boton{
+#button-enviar{
     margin-top: 16px;
-    width: 100%;
+    width: 30%;
     padding: 10px;
     font-family: 'Poppins', sans-serif;
     background-color: var(--orangecolor);
@@ -139,11 +139,22 @@ input{
     cursor: pointer;
 }
 
-.login-enviar__boton:hover{
+#button-enviar:hover{
     color: rgb(204, 204, 204) !important;
     box-shadow: 0 4px 6px rgba(49, 138, 172, 1);
     transition: all 0.2s ease;
 }
+
+#incorrect-user{
+    border-radius: 10px;
+    color:#f3610e;     
+    font-weight: 800;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+}
+
+
 
 
 @media (max-width: 768px) {

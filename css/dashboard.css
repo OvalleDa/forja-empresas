@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+.orange{
+    background-color:#ec6b20 ;
+}
+
+
+
 :root{
     ---whitecolor: #fff;
     --winecolor: #a40101;
