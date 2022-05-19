@@ -8,58 +8,87 @@
     <link rel="shotcut icon" href="img/forja 1.svg">
     <link rel="stylesheet" href="css/dashboard.css">
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="https://kit.fontawesome.com/4c9db78ec9.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4c9db78ec9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div id="sidebar">
-        <div class="logo-side">
-            <a href="dashboard.html"><img src="img/0. logoforja.png" alt="logo de forja"></a>
+    <main id="dashboard">
+
+    <div class="menu-side">
+
+        <div class="log-menu">
+            <a href="index.html" id="logo-dash">
+                <img src="img/logoforja.png" class="forja-logo" alt="logo de forja Empresas">
+            </a>
+           
         </div>
 
-        <div class="buttons-side">
-            <div class="buttons-s">
-                <a href="pacientes.html"><i class="fa-solid fa-users"></i><span>Pacientes</span></a>
-                <a href="vacunacion.html"><i class="fa-solid fa-syringe"></i><span>Vacunación</span></a>
-                <a href="index.html"><i class="fa-solid fa-power-off"></i><span>Cerrar sesión</span></a>
+        <div class="buttons">
+            <div class="bton-menu-side">
+                <a href="pacientes.html" class="btn-Pacientes"><i class="fa-solid fa-users"></i>Pacientes</a>
+            </div>
+
+            <div class="bton-menu-side">
+                <a href="vacunacion.html" class="btn-vacunacion"><i class="fa-solid fa-syringe"></i>Vacunación</a>
+            </div>
+            <div class="bton-menu-side">
+                <a href="login.html" class="btn-cerrar-ses"><i class="fa-solid fa-power-off"></i>Cerrar sesión</a>
             </div>
         </div>
         
     </div>
 
-    <div id="contenido">
-        <div class="button-cont">
-            <div class="button-user">
+    <div class="user-account">
+
+        <div class="user">
+            <div>
                 <a href=""><i class="fa-solid fa-user" href="index.html"></i></a>
-                <p>Carolina Loaiza</p>
+                <h4>Carolina Loaiza</h4>
             </div>
         </div>
 
-        <div class="welcome">
-            <h1 class="texto">BIENVENIDOS</h1>
+        <div class="welcome-user">
+            <h1>BIENVENIDOS</h1>
         </div>
-        <div class="search">
-            <section class="digite">
-                <div class="searcher">
-                    <label for="Documento"></label>
-                    <input type="number" name="documento" id="documento" placeholder="Digite el numero de Documento" class="digite-input">
+
+        <div class="search-id">
+            <form action="" method="post"  id="form-dashboard">
+                <div class="search">
+                <div class="number-id">
+                    <label for="number-id" class="number-id"></label>
+                    <input type="number" name="number-id" id="documento" placeholder="ㅤDigite el numero de documento" required minlength="5">
                 </div>
-                <div class="buttons-input">
-                    <a href="" class="" id="searchicon"><i class="fa-solid fa-magnifying-glass"  onsubmit="user()"></i></a>
-                    <a href=""><i class="fa-solid fa-rotate-right"></i></a>
+                
+                <div class="ico">
+                    <button type="submit" id="searchicon"><i class="fa-solid fa-magnifying-glass" ></i></button>
+                    <!--<a href="#modal" class="cta"><i class="fa-solid fa-magnifying-glass" ></i></a>-->
+                    <a href="dashboard.html"><i class="fa-solid fa-arrow-rotate-right"></i></a> 
                 </div>
-            </section>
-
-        </div>  
-        
-
+                </div>
+                <div class="warningg"></div>
+            </form>
+                
+                
         </div>
 
-        <div class="footer">
-        <img src="img/12. franja.svg" alt="" >
-        </div>
+        <section class="animacion-guerrero">
+            <div class="fondo">
+                <div class="title-guerrero">
+                    <img src="img/13. guerreros.png">
+                </div>
+            </div>
+
+         <div class="franja-foot">
+            <img src="img/12. franja.svg" alt="" >
+        </div>   
+        </section>
+
+
 
     </div>
+    
+    </main>
+
     <script src="js/dash.js"></script>
 </body>
 

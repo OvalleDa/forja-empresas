@@ -42,15 +42,7 @@ label{
 }
 
 
-input{
-    width: 70%;
-    background-color: #E9F6F7;
-    border: 2px solid #cee7e9 ;
-    border-radius: 10px;
-    padding-top: 18px;
-    font-size:medium;
-    text-align: center;
-}
+
 
 .container{
     background-color: var(---whitecolor);
@@ -154,6 +146,47 @@ input{
     text-align: center;
 }
 
+.form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px 0;
+    font-size: 16px;
+    width: 80%;
+}
+
+.form-group input{
+    padding-left: 10px;
+    height: 35px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #A8DDE0;
+    background-color: #a8dde069;
+    margin-top: 10px;
+}
+
+.bton-ingresar{
+    background-color: var(--orangecolor);
+    color: var(---whitecolor);
+    border-radius: 5px;
+    border: 1px solid #2f2c6d;
+    margin: 20px 10px 20px;
+    padding: 5px;
+    width: 120px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.pass{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    border-radius: 12px;
+
+    padding-right: 5px;
+}
 
 
 

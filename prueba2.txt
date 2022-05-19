@@ -1,0 +1,7 @@
+ <form action="" method="post" name="form" action="">
+                    <label for="usuario">Usuario</label>
+                    <input id="user" type="text" required name="user">                    
+                    <label for="contraseña">Contraseña</label>
+                    <input id="password" type="password" required name="password">
+                    <button id="button-enviar" type="submit" name="form" onsubmit="valida()">Ingresar</button>
+                </form>
