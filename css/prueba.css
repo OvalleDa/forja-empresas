@@ -309,6 +309,40 @@ input{
     font-weight: 100;
   }
 
+
+  @media (min-width: 280px ) {
+    input{
+        margin: 0px;
+        width: 160px;
+        border: 1px solid #2ca3abd5;
+        padding: 0 10px;
+        color: gray;
+        }
+
+        .form-control{
+            margin: 5px;
+            width: 160px;
+            height: 20px;
+            border: 1px solid #2ca3abd5;
+    
+            color: gray;
+          }
+        
+        .form-control2{
+            width: 150px;
+        
+            height: 30px;
+            border: 1px solid #2ca3abd5;
+    
+            color: gray;
+        }   
+  }
+
+
+
+
+
+
 @media (min-width: 768px ) {
     header img{
         max-width: 100%;
